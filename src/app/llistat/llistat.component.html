@@ -1,0 +1,21 @@
+<h2>Llistat d'Alumnes</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Cognom</th>
+      <th>Edat</th>
+      <th>Nota</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let alumne of alumnes">
+      <td>{{ alumne.id }}</td>
+      <td>{{ alumne.nom }}</td>
+      <td>{{ alumne.cognom }}</td>
+      <td>{{ alumne.edat }}</td>
+      <td>{{ alumne.nota }}</td>
+    </tr>
+  </tbody>
+</table>
