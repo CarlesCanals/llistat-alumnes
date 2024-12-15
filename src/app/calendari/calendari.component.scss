@@ -1,0 +1,58 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columnes */
+    gap: 5px; /* Espai entre cel·les */
+  }
+  
+  .day-header {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .day,
+  .day.empty {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    min-height: 100px;
+    background-color: #fff; /* Fons blanc per defecte */
+  }
+  
+  .day.saturday {
+    background-color: #d4fdd4; /* Verd pastel per dissabtes */
+  }
+  
+  .day.sunday {
+    background-color: #ffd6d6; /* Vermell pastel per diumenges */
+  }
+  
+  .date {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .exam {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #ffdddd;
+    border: 1px solid #ffaaaa;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .empty {
+    background-color: transparent;
+    border: none;
+  }
+  

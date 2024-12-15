@@ -1,0 +1,40 @@
+<div class="container my-5">
+    <h2 class="text-center mb-4">Calendari d'Exàmens</h2>
+  
+    <!-- Botons per canviar el mes -->
+    <div class="row mb-4">
+      <div class="col">
+        <button class="btn btn-primary w-100" (click)="previousMonth()">Mes Anterior</button>
+      </div>
+      <div class="col text-center">
+        <h4>{{ currentMonthName }} {{ currentYear }}</h4>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary w-100" (click)="nextMonth()">Mes Següent</button>
+      </div>
+    </div>
+  
+    <!-- Contenidor del calendari -->
+    <div class="calendar">
+      <!-- Encapçalaments dels dies de la setmana -->
+      <div class="day-header" *ngFor="let day of daysOfWeek">
+        {{ day }}
+      </div>
+  
+      <!-- Dies buits al començament del mes -->
+      <div class="day empty" *ngFor="let day of emptyDays"></div>
+  
+      <!-- Dies del mes -->
+      <div
+        class="day"
+        *ngFor="let day of daysInMonth"
+        [ngClass]="getDayClass(day)"
+      >
+        <span class="date">{{ day }}</span>
+        <div class="exam" *ngFor="let exam of getExamsForDate(day)">
+          {{ exam }}
+        </div>
+      </div>
+    </div>
+  </div>
+  

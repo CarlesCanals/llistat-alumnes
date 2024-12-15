@@ -1,0 +1,26 @@
+<div class="container my-5">
+    <h2 class="text-center mb-4">Notes dels Alumnes</h2>
+  
+    <!-- Comprova si hi ha alumnes -->
+    <div *ngIf="alumnes.length === 0" class="alert alert-warning text-center">
+      No hi ha dades disponibles. Comprova que el fitxer JSON estigui carregat correctament.
+    </div>
+  
+    <!-- Taula de notes -->
+    <table *ngIf="alumnes.length > 0" class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Alumne</th>
+          <th *ngFor="let modul of moduls">{{ modul }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let alumne of alumnes">
+          <td>{{ alumne.nom }} {{ alumne.cognom }}</td>
+          <td *ngFor="let modul of moduls">
+            {{ alumne.notes[modul] || 'N/A' }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
