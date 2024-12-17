@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientModule
 import { LlistatComponent } from './llistat.component';
 
 describe('LlistatComponent', () => {
@@ -8,7 +7,7 @@ describe('LlistatComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LlistatComponent, HttpClientModule], // Afegeix HttpClientModule aquí
+     
     }).compileComponents();
 
     fixture = TestBed.createComponent(LlistatComponent);
