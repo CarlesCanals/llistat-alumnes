@@ -53,7 +53,7 @@ app.use('**', (req, res, next) => {
  * Inicia el servidor si este módulo es el punto de entrada principal.
  */
 if (isMainModule(import.meta.url)) {
-  const port = process.env['PORT'] || 4000;
+  const port = process.env['PORT'] ?? 4000;
   app.listen(port, () => {
     console.log(`Servidor Express escuchando en http://localhost:${port}`);
   });
