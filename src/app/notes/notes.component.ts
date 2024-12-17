@@ -14,7 +14,8 @@ export class NotesComponent {
   moduls: string[] = []; // Llista de mòduls
   selectedAlumne: any = null;
 
-  constructor(private http: HttpClient) {}
+  constructor(private readonly http: HttpClient) {}
+
 
   ngOnInit(): void {
     this.loadAlumnes();

@@ -15,7 +15,8 @@ export class LlistatComponent implements OnInit {
   alumnesFiltrats: any[] = [];
   filtreText: string = '';
 
-  constructor(private http: HttpClient) {}
+  constructor(private readonly http: HttpClient) {}
+
 
   ngOnInit(): void {
     this.http.get<any[]>('assets/llistat-alumnes.json').subscribe({
