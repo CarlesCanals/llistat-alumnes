@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/": {},
+    "/calendari": {},
+    "/llistat": {},
+    "/notes": {}
+  }
+}
