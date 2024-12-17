@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/llistat-alumnes/',
   entryPoints: {
     '': () => import('./main.server.mjs')
   },
