@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta charset="utf-8">
   <title>LlistatAlumnes</title>
-  <base href="/">
+  <base href="/llistat-alumnes/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles-5INURTSO.css"><style ng-app-id="ng">.container[_ngcontent-ng-c3311343941]{text-align:center;margin-top:50px}h1[_ngcontent-ng-c3311343941]{color:#2c3e50}p[_ngcontent-ng-c3311343941]{font-size:18px;color:#34495e}.welcome[_ngcontent-ng-c3311343941]{text-align:center;margin:20px}</style><style ng-app-id="ng">@charset "UTF-8";.calendar[_ngcontent-ng-c3669461860]{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.day-header[_ngcontent-ng-c3669461860]{text-align:center;font-weight:700;background-color:#f0f0f0;padding:10px;border:1px solid #ddd}.day[_ngcontent-ng-c3669461860], .day.empty[_ngcontent-ng-c3669461860]{border:1px solid #ddd;padding:10px;text-align:center;position:relative;min-height:100px;background-color:#fff}.day.saturday[_ngcontent-ng-c3669461860]{background-color:#d4fdd4}.day.sunday[_ngcontent-ng-c3669461860]{background-color:#ffd6d6}.date[_ngcontent-ng-c3669461860]{font-weight:700;margin-bottom:5px;display:block}.exam[_ngcontent-ng-c3669461860]{position:absolute;bottom:5px;left:5px;right:5px;background-color:#fdd;border:1px solid #ffaaaa;border-radius:5px;font-size:12px;padding:2px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.empty[_ngcontent-ng-c3669461860]{background-color:transparent;border:none}</style></head>
