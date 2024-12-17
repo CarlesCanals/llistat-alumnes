@@ -12,18 +12,20 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4 # Actualització a la versió més recent
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4 # Actualització a la versió més recent
+        uses: actions/setup-node@v2
         with:
-          node-version: '18.19.0' # Versió mínima requerida per Angular CLI
+          node-version: '18' # Utilitza Node.js 18 o superior
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      - name: Run tests in ChromeHeadless
+        run: |
+          npm install --save-dev karma-chrome-launcher
+          npx ng test --browsers ChromeHeadless --watch=false
 
   deploy:
     if: github.ref == 'refs/heads/main' && success()
@@ -32,12 +34,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4 # Actualització a la versió més recent
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4 # Actualització a la versió més recent
+        uses: actions/setup-node@v2
         with:
-          node-version: '18.19.0' # Versió mínima requerida per Angular CLI
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
