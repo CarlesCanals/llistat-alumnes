@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "nom": "Anna",
+    "cognom": "Garcia",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 7.4,
+      "Desenvolupament web en entorn servidor": 5.2,
+      "Desplegament d’aplicacions web": 9.3,
+      "Disseny d’interfícies web": 5.2,
+      "Empresa i iniciativa emprenedora": 9.2
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  },
+  {
+    "id": 2,
+    "nom": "Marc",
+    "cognom": "Martinez",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 5.5,
+      "Desenvolupament web en entorn servidor": 8.7,
+      "Desplegament d’aplicacions web": 5.7,
+      "Disseny d’interfícies web": 5.5,
+      "Empresa i iniciativa emprenedora": 5.5
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  },
+  {
+    "id": 3,
+    "nom": "Laura",
+    "cognom": "Soler",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 7.3,
+      "Desenvolupament web en entorn servidor": 7.7,
+      "Desplegament d’aplicacions web": 8.3,
+      "Disseny d’interfícies web": 6.9,
+      "Empresa i iniciativa emprenedora": 6.8
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  },
+  {
+    "id": 4,
+    "nom": "Pere",
+    "cognom": "Vila",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 7.0,
+      "Desenvolupament web en entorn servidor": 8.1,
+      "Desplegament d’aplicacions web": 5.8,
+      "Disseny d’interfícies web": 9.6,
+      "Empresa i iniciativa emprenedora": 8.6
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  },
+  {
+    "id": 5,
+    "nom": "Marta",
+    "cognom": "Ferrer",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 9.5,
+      "Desenvolupament web en entorn servidor": 8.5,
+      "Desplegament d’aplicacions web": 7.7,
+      "Disseny d’interfícies web": 6.7,
+      "Empresa i iniciativa emprenedora": 7.9
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  },
+  {
+    "id": 6,
+    "nom": "Jordi",
+    "cognom": "Puig",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 9.2,
+      "Desenvolupament web en entorn servidor": 10.0,
+      "Desplegament d’aplicacions web": 6.6,
+      "Disseny d’interfícies web": 9.7,
+      "Empresa i iniciativa emprenedora": 9.6
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  },
+  {
+    "id": 7,
+    "nom": "Carla",
+    "cognom": "Rovira",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 5.4,
+      "Desenvolupament web en entorn servidor": 7.2,
+      "Desplegament d’aplicacions web": 6.2,
+      "Disseny d’interfícies web": 8.1,
+      "Empresa i iniciativa emprenedora": 8.8
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  },
+  {
+    "id": 8,
+    "nom": "Joan",
+    "cognom": "Lopez",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 5.4,
+      "Desenvolupament web en entorn servidor": 6.1,
+      "Desplegament d’aplicacions web": 7.9,
+      "Disseny d’interfícies web": 7.6,
+      "Empresa i iniciativa emprenedora": 5.0
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  },
+  {
+    "id": 9,
+    "nom": "Sofia",
+    "cognom": "Cruz",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 8.9,
+      "Desenvolupament web en entorn servidor": 6.8,
+      "Desplegament d’aplicacions web": 7.5,
+      "Disseny d’interfícies web": 8.5,
+      "Empresa i iniciativa emprenedora": 5.7
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  },
+  {
+    "id": 10,
+    "nom": "Albert",
+    "cognom": "Navarro",
+    "curs": "Segon",
+    "cicle": "Desenvolupament d'Aplicacions Web",
+    "notes": {
+      "Desenvolupament web en entorn client": 8.2,
+      "Desenvolupament web en entorn servidor": 6.7,
+      "Desplegament d’aplicacions web": 6.9,
+      "Disseny d’interfícies web": 5.8,
+      "Empresa i iniciativa emprenedora": 5.9
+    },
+    "moduls_segona_avaluacio": {
+      "Desenvolupament web en entorn client": "2025-01-14",
+      "Desenvolupament web en entorn servidor": "2025-01-21",
+      "Desplegament d’aplicacions web": "2025-01-28",
+      "Disseny d’interfícies web": "2025-02-04",
+      "Empresa i iniciativa emprenedora": "2025-02-11"
+    }
+  }
+]

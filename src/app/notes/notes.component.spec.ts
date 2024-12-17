@@ -1,23 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed } from '@angular/core/testing';
 import { NotesComponent } from './notes.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('NotesComponent', () => {
   let component: NotesComponent;
-  let fixture: ComponentFixture<NotesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NotesComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(NotesComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+      imports: [NotesComponent, HttpClientModule], // Importa NotesComponent i HttpClientModule
+    }).compileComponents();
   });
 
   it('should create', () => {
+    const fixture = TestBed.createComponent(NotesComponent);
+    component = fixture.componentInstance;
     expect(component).toBeTruthy();
   });
 });
