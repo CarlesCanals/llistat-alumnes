@@ -8,6 +8,5 @@ export const routes: Routes = [
   { path: 'llistat', component: LlistatComponent },
   { path: 'calendari', component: CalendariComponent },
   { path: 'notes', component: NotesComponent }, // Ruta per al component Notes
-  { path: '', component: HomeComponent },
-  { path: '**', redirectTo: '' }
+  { path: '', component: HomeComponent }
 ];
