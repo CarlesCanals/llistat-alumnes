@@ -3,7 +3,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <title>LlistatAlumnes</title>
   <base href="/llistat-alumnes/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=/llistat-alumnes/index.html">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles-5INURTSO.css"><style ng-app-id="ng">.container[_ngcontent-ng-c3937138549]{text-align:center;margin-top:50px}h1[_ngcontent-ng-c3937138549]{color:#2c3e50}p[_ngcontent-ng-c3937138549]{font-size:18px;color:#34495e}.welcome[_ngcontent-ng-c3937138549]{text-align:center;margin:20px}</style><style ng-app-id="ng">.list-group-item[_ngcontent-ng-c4289712296]{cursor:pointer}.card[_ngcontent-ng-c4289712296]{margin-top:20px}.card-header[_ngcontent-ng-c4289712296]{display:flex;justify-content:space-between;align-items:center}</style></head>
 <body><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
