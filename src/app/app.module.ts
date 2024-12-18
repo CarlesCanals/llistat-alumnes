@@ -1,34 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { NotesComponent } from './notes/notes.component';
-import { LlistatComponent } from './llistat/llistat.component';
-import { CalendariComponent } from './calendari/calendari.component';
-import { FormsModule } from '@angular/forms'; // Importa FormsModule
-import { HomeComponent } from './home/home.component';
 
+import { AppComponent } from './app.component';
+import { LlistatComponent } from './llistat/llistat.component';
+import { NotesComponent } from './notes/notes.component';
+import { CalendariComponent } from './calendari/calendari.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: AppComponent },
   { path: 'llistat', component: LlistatComponent },
-  { path: 'calendari', component: CalendariComponent },
   { path: 'notes', component: NotesComponent },
-  { path: '**', redirectTo: '' }
+  { path: 'calendari', component: CalendariComponent }
 ];
 
 @NgModule({
   declarations: [
-    HomeComponent,
+    AppComponent,
     LlistatComponent,
-    CalendariComponent,
-    NotesComponent
+    NotesComponent,
+    CalendariComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
-    FormsModule // Afegeix-lo aquí
+    RouterModule.forRoot(routes) // Importa les rutes
   ],
-  providers: [], // Afegeix un array de providers si necessites serveis globals
-  bootstrap: [HomeComponent] // O el component principal de la teva aplicació
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}
