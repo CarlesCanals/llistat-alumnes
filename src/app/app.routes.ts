@@ -7,7 +7,6 @@ import { NotesComponent } from './notes/notes.component';
 export const routes: Routes = [  // Afegir 'export' aquí
   { path: 'llistat', component: LlistatComponent },
   { path: 'calendari', component: CalendariComponent },
-  { path: 'notes', component: NotesComponent },
-  { path: '', component: HomeComponent },
-  { path: '**', redirectTo: '' }
+  { path: 'notes', component: NotesComponent }, // Ruta per al component Notes
+  { path: '', component: HomeComponent }
 ];
