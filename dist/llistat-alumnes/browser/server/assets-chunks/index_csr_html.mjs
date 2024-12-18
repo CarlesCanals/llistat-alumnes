@@ -5,6 +5,7 @@ export default `<!doctype html>
   <title>LlistatAlumnes</title>
   <base href="/llistat-alumnes/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=/llistat-alumnes/index.html">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles-5INURTSO.css"></head>
 <body ngcm="">
