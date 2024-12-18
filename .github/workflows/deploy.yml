@@ -47,8 +47,13 @@ jobs:
       - name: Build project
         run: npm run build -- --configuration=production --base-href /llistat-alumnes/
 
+      - name: Clean GitHub Pages
+        run: rm -rf ./dist/llistat-alumnes/browser/*
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/llistat-alumnes/browser # Directori correcte
+          publish_dir: ./dist/llistat-alumnes/browser
+          keep_files: false # Esborra el contingut antic abans de pujar el nou
+
