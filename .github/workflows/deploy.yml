@@ -45,7 +45,8 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build -- --configuration=production --base-href llistat-alumnes/llistat-alumnes/
+        run: npm run build -- --configuration=production --base-href /llistat-alumnes/
+      
 
       - name: Clean GitHub Pages
         run: rm -rf ./dist/llistat-alumnes/browser/*
