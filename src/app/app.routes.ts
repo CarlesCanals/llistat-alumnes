@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
-import { LlistatComponent } from './llistat/llistat.component';
-import { CalendariComponent } from './calendari/calendari.component';
 import { HomeComponent } from './home/home.component';
+import { LlistatComponent } from './llistat/llistat.component';
 import { NotesComponent } from './notes/notes.component';
+import { CalendariComponent } from './calendari/calendari.component';
 
-export const routes: Routes = [  // Afegir 'export' aquí
+export const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'llistat', component: LlistatComponent },
+  { path: 'notes', component: NotesComponent },
   { path: 'calendari', component: CalendariComponent },
-  { path: 'notes', component: NotesComponent }, // Ruta per al component Notes
-  { path: '', component: HomeComponent }
 ];
