@@ -1,8 +1,8 @@
 {
   "routes": {
-    "/llistat-alumnes": {},
-    "/llistat-alumnes/calendari": {},
-    "/llistat-alumnes/llistat": {},
-    "/llistat-alumnes/notes": {}
+    "/https://carlescanals.github.io/llistat-alumnes": {},
+    "/https://carlescanals.github.io/llistat-alumnes/calendari": {},
+    "/https://carlescanals.github.io/llistat-alumnes/llistat": {},
+    "/https://carlescanals.github.io/llistat-alumnes/notes": {}
   }
 }
