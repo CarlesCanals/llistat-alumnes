@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientModule
 import { LlistatComponent } from './llistat.component';
+import { provideHttpClient } from '@angular/common/http';
 
 describe('LlistatComponent', () => {
   let component: LlistatComponent;
@@ -8,7 +8,10 @@ describe('LlistatComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LlistatComponent, HttpClientModule], // Afegeix HttpClientModule aquí
+      imports: [LlistatComponent], // Importa el componente standalone
+      providers: [
+        provideHttpClient(), // Proveedor necesario para HttpClient
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(LlistatComponent);

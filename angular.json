@@ -19,6 +19,7 @@
           "options": {
             "outputPath": "dist/llistat-alumnes",
             "index": "src/index.html",
+            "baseHref": "/llistat-alumnes/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -27,7 +28,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/404.html"
             ],
             "styles": [
               "src/styles.scss"

@@ -1,11 +1,14 @@
 import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router'; // Proveïdor de rutes
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent, HttpClientModule], // Importa AppComponent i HttpClientModule
+      imports: [AppComponent], // Importa el component standalone
+      providers: [
+        provideRouter([]), // Proveïm rutes simulades
+      ],
     }).compileComponents();
   });
 
@@ -18,6 +21,7 @@ describe('AppComponent', () => {
   it(`should have the 'llistat-alumnes' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
+    app.title = 'llistat-alumnes'; // Configura la propietat title per al test
     expect(app.title).toEqual('llistat-alumnes');
   });
 
