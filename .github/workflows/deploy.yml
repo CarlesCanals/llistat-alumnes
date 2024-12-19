@@ -51,3 +51,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: main  # Assegura't que utilitzi 'main' i no 'gh-pages'
           publish_dir: ./dist/llistat-alumnes
+
