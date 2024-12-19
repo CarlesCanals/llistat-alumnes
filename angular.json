@@ -19,7 +19,6 @@
           "options": {
             "outputPath": "dist/llistat-alumnes",
             "index": "src/index.html",
-            "assets": ["src/favicon.ico", "src/assets", "src/404.html"],
             "baseHref": "/llistat-alumnes/",
             "browser": "src/main.ts",
             "polyfills": [
