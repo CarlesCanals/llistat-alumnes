@@ -1,20 +1,21 @@
+import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { LlistatComponent } from './llistat/llistat.component';
-import { NotesComponent } from './notes/notes.component';
 import { CalendariComponent } from './calendari/calendari.component';
+import { HomeComponent } from './home/home.component';
+import { NotesComponent } from './notes/notes.component';
 
-const routes: Routes = [
-  { path: '', component: HomeComponent },
+export const routes: Routes = [
   { path: 'llistat', component: LlistatComponent },
-  { path: 'notes', component: NotesComponent },
   { path: 'calendari', component: CalendariComponent },
-  { path: '**', redirectTo: '' }, // Per gestionar rutes desconegudes
+  { path: 'notes', component: NotesComponent },
+  { path: '', component: HomeComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })], // Assegura't d'afegir useHash
+  imports: [
+    RouterModule.forRoot(routes, { useHash: true }) // Afegim `useHash` aquí
+  ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
