@@ -8,7 +8,6 @@ on:
 
 jobs:
   build-and-test:
-    if: github.ref == 'refs/heads/develop' # Executa només a la branca develop
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -28,7 +27,7 @@ jobs:
           npx ng test --browsers ChromeHeadless --watch=false
 
   deploy:
-    if: github.ref == 'refs/heads/main' # Desplega només des de la branca main
+    if: github.ref == 'refs/heads/main' && success()
     needs: build-and-test
     runs-on: ubuntu-latest
     steps:
@@ -44,11 +43,12 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build -- --base-href="/llistat-alumnes/"
+        run: npm run build -- --base-href /llistat-alumnes/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages # Defineix la branca per GitHub Pages
-          publish_dir: ./dist/llistat-alumnes # Directori amb els fitxers construïts
+          publish_branch: gh-pages # Defineix la branca de desplegament
+          publish_dir: ./dist/llistat-alumnes
+
