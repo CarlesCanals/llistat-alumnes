@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class AlumnesService {
 
-  private readonly url = 'assets/llistat-alumnes.json';
-  constructor(private readonly http: HttpClient) {}
+  private readonly url = 'assets/llistat-alumnes.json'; // Afegir `readonly`
+  constructor(private readonly http: HttpClient) {} // Afegir `readonly`
 
 
   getAlumnes(): Observable<any> {
