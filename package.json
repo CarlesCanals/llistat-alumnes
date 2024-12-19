@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:clean": "ng build --base-href /llistat-alumnes/ && mv dist/llistat-alumnes/browser/* dist/llistat-alumnes && rm -rf dist/llistat-alumnes/browser",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:llistat-alumnes": "node dist/llistat-alumnes/server/server.mjs",
