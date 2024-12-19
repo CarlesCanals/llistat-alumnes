@@ -15,15 +15,19 @@ const app = express();
 const angularApp = new AngularNodeAppEngine();
 
 /**
- * Endpoint de ejemplo para la API REST.
- * Aquí puedes agregar tus rutas de API.
+ * Example Express Rest API endpoints can be defined here.
+ * Uncomment and define endpoints as necessary.
+ *
+ * Example:
+ * ```ts
+ * app.get('/api/**', (req, res) => {
+ *   // Handle API request
+ * });
+ * ```
  */
-app.get('/api/data', (req, res) => {
-  res.json({ message: 'Datos de prueba desde el servidor SSR' });
-});
 
 /**
- * Middleware para servir archivos estáticos desde /browser.
+ * Serve static files from /browser
  */
 app.use(
   express.static(browserDistFolder, {
@@ -34,32 +38,29 @@ app.use(
 );
 
 /**
- * Middleware para manejar todas las demás solicitudes y renderizar Angular.
+ * Handle all other requests by rendering the Angular application.
  */
-app.use('**', (req, res, next) => {
+app.use('/**', (req, res, next) => {
   angularApp
     .handle(req)
-    .then((response) => {
-      if (response) {
-        writeResponseToNodeResponse(response, res);
-      } else {
-        next();
-      }
-    })
+    .then((response) =>
+      response ? writeResponseToNodeResponse(response, res) : next(),
+    )
     .catch(next);
 });
 
 /**
- * Inicia el servidor si este módulo es el punto de entrada principal.
+ * Start the server if this module is the main entry point.
+ * The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
  */
 if (isMainModule(import.meta.url)) {
-  const port = process.env['PORT'] ?? 4000;
+  const port = process.env['PORT'] || 4000;
   app.listen(port, () => {
-    console.log(`Servidor Express escuchando en http://localhost:${port}`);
+    console.log(`Node Express server listening on http://localhost:${port}`);
   });
 }
 
 /**
- * Exporta el manejador de solicitudes para el prerenderizado.
+ * The request handler used by the Angular CLI (dev-server and during build).
  */
 export const reqHandler = createNodeRequestHandler(app);
