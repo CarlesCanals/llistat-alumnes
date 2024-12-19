@@ -2,38 +2,38 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/llistat-alumnes/',
+  baseHref: 'https://carlescanals.github.io/llistat-alumnes/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/llistat-alumnes"
+    "route": "/https://carlescanals.github.io/llistat-alumnes"
   },
   {
     "renderMode": 2,
-    "route": "/llistat-alumnes/llistat"
+    "route": "/https://carlescanals.github.io/llistat-alumnes/llistat"
   },
   {
     "renderMode": 2,
-    "route": "/llistat-alumnes/notes"
+    "route": "/https://carlescanals.github.io/llistat-alumnes/notes"
   },
   {
     "renderMode": 2,
-    "route": "/llistat-alumnes/calendari"
+    "route": "/https://carlescanals.github.io/llistat-alumnes/calendari"
   },
   {
     "renderMode": 2,
-    "redirectTo": "/llistat-alumnes",
-    "route": "/llistat-alumnes/**"
+    "redirectTo": "/https://carlescanals.github.io/llistat-alumnes",
+    "route": "/https://carlescanals.github.io/llistat-alumnes/**"
   }
 ],
   assets: {
-    'index.csr.html': {size: 514, hash: '4b446e60f254c36c41cdc634de5eb4dd87473d0f3939628fd9da6628d5f4fea8', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1027, hash: '3bb7218a458062fefc16802a8304316ed522f63395b60ceb506a7248a1e43fbd', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'llistat/index.html': {size: 3488, hash: 'c6d6fb3820cde0a964ec27cba33cf48d72e67bf7a2638b9b77e0ca84d898d2d6', text: () => import('./assets-chunks/llistat_index_html.mjs').then(m => m.default)},
-    'notes/index.html': {size: 3527, hash: '777613845b0e7a8c3529060f7bc0a4fe6fb91e1cdb4c35ed8e6956cc78f677ec', text: () => import('./assets-chunks/notes_index_html.mjs').then(m => m.default)},
-    'index.html': {size: 6614, hash: '9f592a7d166d5da3724b70f5ac64a88df83fd4485026993be559b4a9140dbd14', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'calendari/index.html': {size: 4259, hash: 'a32e0c0bbf977d785f40ce0b4914cb4f7734657130eb5b058db2e654b8639839', text: () => import('./assets-chunks/calendari_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 544, hash: 'acdfa7919e2897379323d62a16d384d9d33652e5890e8c6b8d64b1c89beaa1db', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1057, hash: 'dc6b1cc747f9921a1eddbd3a2c968158a3e5d34454803d971cf6d3b829c003d7', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'llistat/index.html': {size: 6764, hash: 'ba0fd39e02cb1745a5073f8ac058f701cd2ff9de52c57b32b2934b069454a0bc', text: () => import('./assets-chunks/llistat_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 6764, hash: 'ba0fd39e02cb1745a5073f8ac058f701cd2ff9de52c57b32b2934b069454a0bc', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'notes/index.html': {size: 6764, hash: 'ba0fd39e02cb1745a5073f8ac058f701cd2ff9de52c57b32b2934b069454a0bc', text: () => import('./assets-chunks/notes_index_html.mjs').then(m => m.default)},
+    'calendari/index.html': {size: 6764, hash: 'ba0fd39e02cb1745a5073f8ac058f701cd2ff9de52c57b32b2934b069454a0bc', text: () => import('./assets-chunks/calendari_index_html.mjs').then(m => m.default)},
     'styles-5INURTSO.css': {size: 0, hash: 'menYUTfbRu8', text: () => import('./assets-chunks/styles-5INURTSO_css.mjs').then(m => m.default)}
   },
 };

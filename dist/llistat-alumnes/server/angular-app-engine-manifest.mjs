@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/llistat-alumnes/',
+  basePath: 'https://carlescanals.github.io/llistat-alumnes/',
   entryPoints: {
     '': () => import('./main.server.mjs')
   },
