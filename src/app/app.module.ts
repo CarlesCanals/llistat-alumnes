@@ -8,10 +8,10 @@ import { NotesComponent } from './notes/notes.component';
 import { CalendariComponent } from './calendari/calendari.component';
 
 const routes: Routes = [
-  { path: 'llistat-alumnes', component: AppComponent },
-  { path: 'llistat-alumnes/llistat', component: LlistatComponent },
-  { path: 'llistat-alumnes/notes', component: NotesComponent },
-  { path: 'llistat-alumnes/calendari', component: CalendariComponent }
+  { path: '', component: AppComponent },
+  { path: 'llistat', component: LlistatComponent },
+  { path: 'notes', component: NotesComponent },
+  { path: 'calendari', component: CalendariComponent }
 ];
 
 @NgModule({
