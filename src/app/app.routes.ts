@@ -9,5 +9,5 @@ export const routes: Routes = [
   { path: 'llistat', component: LlistatComponent },
   { path: 'notes', component: NotesComponent },
   { path: 'calendari', component: CalendariComponent },
-  { path: '**', redirectTo: '' }, // Redirigeix qualsevol ruta incorrecta a l'inici
+  { path: '**', redirectTo: '' }, // Redirigeix a l'inici si la ruta no existeix
 ];
