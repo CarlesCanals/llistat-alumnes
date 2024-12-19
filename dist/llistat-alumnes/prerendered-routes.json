@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/llistat-alumnes": {},
+    "/llistat-alumnes/calendari": {},
+    "/llistat-alumnes/llistat": {},
+    "/llistat-alumnes/notes": {}
+  }
+}
