@@ -18,9 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/llistat-alumnes",
-            "index": "src/index.html",
             "baseHref": "/llistat-alumnes/",
-            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
