@@ -6,10 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { NotesComponent } from './notes/notes.component';
 
 export const routes: Routes = [
-  { path: 'llistat', component: LlistatComponent },
-  { path: 'calendari', component: CalendariComponent },
-  { path: 'notes', component: NotesComponent },
-  { path: '', component: HomeComponent }
+  { path: 'llistat-alumnes/llistat', component: LlistatComponent },
+  { path: 'llistat-alumnes/calendari', component: CalendariComponent },
+  { path: 'llistat-alumnes/notes', component: NotesComponent },
+  { path: 'llistat-alumnes/', component: HomeComponent }
 ];
 
 @NgModule({
