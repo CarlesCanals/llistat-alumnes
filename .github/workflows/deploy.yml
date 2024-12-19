@@ -44,11 +44,12 @@ jobs:
 
       - name: Build project
         run: npm run build -- --configuration production --base-href /llistat-alumnes/
-      
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/llistat-alumnes/
-      
+          publish_branch: main
+          user_name: "GitHub Actions"
+          user_email: "actions@github.com"
