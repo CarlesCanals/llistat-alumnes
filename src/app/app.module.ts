@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LlistatComponent } from './llistat/llistat.component';
 import { NotesComponent } from './notes/notes.component';
 import { CalendariComponent } from './calendari/calendari.component';
-import { HomeComponent } from './home/home.component'; // Importa el HomeComponent standalone
 
 const routes: Routes = [
   { path: '', loadComponent: () => import('./home/home.component').then(m => m.HomeComponent) }, // Carrega HomeComponent
